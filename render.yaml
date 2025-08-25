@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: cumple-web
+    env: docker
+    plan: free
+    autoDeploy: true
+    disk:
+      name: perfil-chrome
+      mountPath: /data
+      sizeGB: 1
+    healthCheckPath: /
